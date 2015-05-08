@@ -1,0 +1,36 @@
+body
+{
+	background-color: #b3cff7;
+}
+.activated
+{
+	background-color: #46577f
+}
+.holder
+{
+	box-shadow: #666 1px 1px 3px;
+	padding:1em;
+	border-radius: 1em;
+	background-color: #fcfcfc;
+}
+.product
+{
+	border: #666 1px solid;
+	box-shadow: #666 1px 1px 3px;
+	text-align: center;
+}
+.product:hover
+{
+	box-shadow: #ccf 3px 3px 7px;
+}
+.description
+{
+	margin: 5px;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+}
+.productImage
+{
+	max-width: 200px;
+	resize:both;
+}
