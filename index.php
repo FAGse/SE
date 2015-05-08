@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,8 +42,8 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">Computer</a></li>
-            <li><a href="#contact">Forum</a></li>
+            <li><a href="computer.html">Computer</a></li>
+            <li><a href="forum.html">Forum</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <form class="form-inline" style="margin-top:0.5em;">
