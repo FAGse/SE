@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +6,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Vonrais</title>
+    <title>Static Top Navbar Example for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,13 +37,13 @@ session_start();
             <span class="icon-bar"></span>
           </button>
           <!-- ini kasih logo nya sama tulisan coba disamain yaa -->
-          <a class="navbar-brand" href="index.php">Vonrais</a>
+          <a class="navbar-brand" href="index.html">Vonrais</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="computer.php">Computer</a></li>
-            <li><a href="forum.php">Forum</a></li>
+            <li><a href="computer.html">Computer</a></li>
+            <li><a href="forum.html">Forum</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <form class="form-inline" style="margin-top:0.5em;">
@@ -65,53 +62,29 @@ session_start();
     </nav>
 
 
-    <div class="container holder" style="background-color:#fcfcfc">
+    <div class="container holder col-md-6 col-md-offset-3" style="background-color:#fcfcfc">
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="col-md-9">
-        <div class="col-md-4 product">
-          <img src="images/1.jpg" class="productImage">
-          <div class="description">
-            kalalllaal<br>
-            aoplahaufhiea
-          </div>
+      <form action="controller/doRegister.php" method="post">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email">
         </div>
-        <div class="col-md-4 product">
-          <img src="images/1.jpg" class="productImage">
-          <div class="description">
-            kalalllaal<br>
-            aoplahaufhiea
-          </div>
+        <div class="form-group">
+          <label for="userame">Full Name</label>
+          <input type="text" class="form-control" id="userame" placeholder="Enter Full Name" name="fullname">
         </div>
-        <div class="col-md-4 product">
-          <img src="images/1.jpg" class="productImage">
-          <div class="description">
-            kalalllaal<br>
-            aoplahaufhiea
-          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
         </div>
-      </div>
-      <div class="col-md-3 holder">
-      <?php if(!isset($_SESSION["fullname"])) { ?>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Remember Me
-            </label>
-          </div>
-          <button class="btn btn-default" onclick="window.open('register.php','_blank')">Register</button>
-          <button type="submit" class="btn btn-primary">Log in</button>
-        </form>
-        <?php } ?>
-      </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> I Agree with the terms and conditions
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 
     </div> <!-- /container -->
 
