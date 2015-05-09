@@ -34,3 +34,7 @@ body
 	max-width: 200px;
 	resize:both;
 }
+.errorText
+{
+	color:#a94442;
+}
