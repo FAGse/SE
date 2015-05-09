@@ -50,27 +50,98 @@
     <div class="form-group">
         <label class="wd">Processor</label>
     </div>
-    <select align="center" class="wd btn btn-default">
+    <select class="wd btn btn-default" id="processor">
       <option value="select">--select--</option>
-      <option value="saab">Saab</option>
-      <option value="opel">Opel</option>
-      <option value="audi">Audi</option>
     </select>
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-  </div>
+    <div align="center" style="display: inline;">
+      <input type="text" class="form-control wd" id="value1" readonly>
+    </div>
 
     <br>
 
     <div class="form-group">
-        <label class="wd">Processor</label>
+        <label class="wd">Mainboard</label>
     </div>
-    <div class="form-group">
-        <label class="wd">MainBoard</label>
-    </div>
-    <div class="form-group">
-        <input type="email" class="form-control wd" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+    <select class="wd btn btn-default" id="mainboard">
+      <option value="select">--select--</option>
+    </select>
+    <div align="center" style="display: inline;">
+      <input type="text" class="form-control wd" id="value2" readonly>
     </div>
 
+    <br>
+
+    <div class="form-group">
+        <label class="wd">Harddisk</label>
+    </div>
+    <select class="wd btn btn-default" id="harddisk">
+      <option value="select">--select--</option>
+    </select>
+    <div align="center" style="display: inline;">
+      <input type="text" class="form-control wd" id="value3" readonly>
+    </div>
+
+    <br>
+
+    <div class="form-group">
+        <label class="wd">Memory RAM</label>
+    </div>
+    <select class="wd btn btn-default" id="memory">
+      <option value="select">--select--</option>
+    </select>
+    <div align="center" style="display: inline;">
+      <input type="text" class="form-control wd" id="value4" readonly>
+    </div>
+
+    <br>
+
+     <div class="form-group">
+        <label class="wd">VGA</label>
+    </div>
+    <select class="wd btn btn-default" id="vga">
+      <option value="select">--select--</option>
+    </select>
+    <div align="center" style="display: inline;">
+      <input type="text" class="form-control wd" id="value5" readonly>
+    </div>
+
+    <br>    
+
+     <div class="form-group">
+        <label class="wd">Casing</label>
+    </div>
+    <select class="wd btn btn-default" id="casing">
+      <option value="select">--select--</option>
+    </select>
+    <div align="center" style="display: inline;">
+      <input type="text" class="form-control wd" id="value6" readonly>
+    </div>
+
+    <br>
+
+     <div class="form-group">
+        <label class="wd">DVD</label>
+    </div>
+    <select class="wd btn btn-default" id="dvd">
+      <option value="select">--select--</option>
+    </select>
+    <div align="center" style="display: inline;">
+      <input type="text" class="form-control wd" id="value8" readonly>
+    </div>
+
+    <br>
+
+     <div class="form-group">
+        <label class="wd">Keyboard & Mouse</label>
+    </div>
+    <select class="wd btn btn-default" id="kNm">
+      <option value="select">--select--</option>
+    </select>
+    <div align="center" style="display: inline;">
+      <input type="text" class="form-control wd" id="value9" readonly>
+    </div>
+
+    <br>
   </form>
 </body>
 </html>
