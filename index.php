@@ -111,7 +111,7 @@ session_start();
             <h4 class="errorText">Wrong email address and password combination</h4>
           <?php
            } ?>
-          <button class="btn btn-default" onclick="window.open('register.php','_self')">Register</button>
+          <button type="button" class="btn btn-default" onclick="window.open('register.php','_self')">Register</button>
           <button type="submit" class="btn btn-primary">Log in</button>
         </form>
         <?php } else { ?>

@@ -80,16 +80,34 @@
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox"> I Agree with the terms and conditions
+            <input type="checkbox" id="check"> I Agree with the terms and conditions
           </label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button id="btnSubmit" type="submit" class="btn btn-primary">Submit</button>
       </form>
 
     </div> <!-- /container -->
 
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function()
+      {
+        $("#btnSubmit").attr('disabled','disabled');
+      });
+      $("#check").change(function()
+        {
+          if(this.checked)
+          {
+            $("#btnSubmit").removeAttr('disabled');
+          }
+          else
+          {
+            $("#btnSubmit").attr('disabled','disabled');
+          }
+
+        });
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
