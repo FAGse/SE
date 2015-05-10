@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Computer</title>
+	<title>Vonrais-Computer</title>
   <link href="main.css" rel="stylesheet">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <script type="text/javascript" src="jquery.js"></script>
@@ -106,7 +106,7 @@
       </div><!--/.nav-collapse -->
     </div>
   </nav>
-  <form class="form-inline" align="center">
+  <form class="form-inline" align="center" action="buy.php" method="post">
     <div class="form-group">
         <label class="wd">Processor</label>
     </div>
@@ -246,7 +246,7 @@
         <label class="wd" style="width:400px; margin-right:15px;">Total</label>
     </div>
      <div align="center" style="display: inline;">
-      <input type="text" class="form-control wd" id="value9" value="0" readonly>
+      <input type="text" class="form-control wd" id="value9" name="total" value="0" readonly>
     </div>
     <div>
       <button class="btn btn-info" type="submit" value="Submit">Buy Now</button>

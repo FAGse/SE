@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Static Top Navbar Example for Bootstrap</title>
+    <title>Vonrais</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,13 +40,13 @@
             <span class="icon-bar"></span>
           </button>
           <!-- ini kasih logo nya sama tulisan coba disamain yaa -->
-          <a class="navbar-brand" href="index.html">Vonrais</a>
+          <a class="navbar-brand" href="index.php">Vonrais</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class=""><a href="#">Home</a></li>
-            <li><a href="computer.html">Computer</a></li>
-            <li class="active"><a href="forum.html">Forum</a></li>
+            <li><a href="computer.php">Computer</a></li>
+            <li><a href="forum.php">Forum</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <form class="form-inline" style="margin-top:0.5em;">
@@ -62,22 +65,18 @@
     </nav>
 
 
-    <div class="container holder" style="background-color:#fcfcfc">
+    <div class="container holder" style="background-color:#fcfcfc;text-align:center">
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="col-md-12">
-          <div class="container">
-            <center><h1>Coming Soon ! :)</h1></center>
-           </div>
-      </div>  
-        
-      </div>
-      
+      <h1>Thank you for shopping with us</h1>
 
     </div> <!-- /container -->
 
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      setTimeout(function(){window.open("index.php","_self")},5000);
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
